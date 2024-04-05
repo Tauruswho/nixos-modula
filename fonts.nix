@@ -1,5 +1,6 @@
- { config, lib, pkgs, ... }: {
+ { config, lib, pkgs, ... }:
   # Fonts
+{
   fonts.packages = with pkgs; [
   noto-fonts
   noto-fonts-cjk

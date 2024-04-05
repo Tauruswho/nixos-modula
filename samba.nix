@@ -1,4 +1,5 @@
- { config, lib, pkgs, ... }: {
+ { config, lib, pkgs, ... }:
+{
   # Samba Server
 services.samba-wsdd.enable = true; # make shares visible for windows 10 clients
 services.samba = {

@@ -1,4 +1,5 @@
-{ config, lib, pkgs, ... }: {
+{ config, lib, pkgs, ... }:
+{
  # Enable CUPS to print documents and enable scanners.
   services.printing.enable = true;
   # run on first setup: sudo hp-setup -i -a
@@ -10,4 +11,4 @@
   nixpkgs.config.packageOverrides = pkgs: {
     xsaneGimp = pkgs.xsane.override { gimpSupport = true; };
   services.fwupd.enable = true;
-  }
+}

@@ -1,4 +1,5 @@
-   { config, lib, pkgs, ... }: {
+   { config, lib, pkgs, ... }:
+{
     # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.twat = {
     isNormalUser = true;
@@ -8,7 +9,7 @@
     #  firefox
     #  thunderbird
     ];
-  };
+};
 
     users.users.mince = {
     homeMode = "770";
@@ -21,7 +22,7 @@
     packages = with pkgs; [
     # firefox
     ];
-  };
+};
   users.users.mark = {
   homeMode = "770";
   isNormalUser  = true;

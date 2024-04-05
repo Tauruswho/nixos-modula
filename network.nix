@@ -1,5 +1,6 @@
- { config, lib, pkgs, ... }: {
+ { config, lib, pkgs, ... }:
   # Enable networking
+{
   networking.networkmanager.enable = true;
   networking.enableIPv6  = false;
   networking.extraHosts =
@@ -23,5 +24,5 @@
   # address = "192.168.1.27";
   # prefixLength = 24;
  # } ];
- }
+}
 
