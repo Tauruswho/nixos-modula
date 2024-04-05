@@ -11,4 +11,6 @@
   nixpkgs.config.packageOverrides = pkgs: {
     xsaneGimp = pkgs.xsane.override { gimpSupport = true; };
   services.fwupd.enable = true;
+ };
 }
+

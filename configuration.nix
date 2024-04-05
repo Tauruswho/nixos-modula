@@ -8,16 +8,16 @@
   imports =
     [ # Include the results of the hardware scan and other modules.
       ./hardware-configuration.nix
-      ./avahi.nixos
+      ./avahi.nix
       ./bluetooth.nix
-      ./fonts.nixos
+      ./fonts.nix
       ./network.nix
-      ./nfs.nixos
-      ./packages.nixos
-      ./printing.nixos
-      ./samba.nixos
-      ./sound.nixos
-      ./users.nixos
+      ./nfs.nix
+      ./packages.nix
+      ./printing.nix
+      ./samba.nix
+      ./sound.nix
+      ./users.nix
       ./zfs.nix
     ];
 
