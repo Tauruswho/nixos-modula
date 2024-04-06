@@ -58,6 +58,11 @@
       fsType = "zfs";
     };
 
+  fileSystems."/Backup-xfs-1" =
+    { device = "/dev/disk/by-uuid/adb8dbaf-e9f6-468c-b56c-d4d1cbf29bc4";
+      fsType = "xfs";
+    };
+
   fileSystems."/boot" =
     { device = "/dev/disk/by-uuid/973A-11EF";
       fsType = "vfat";
