@@ -12,5 +12,21 @@
     xsaneGimp = pkgs.xsane.override { gimpSupport = true; };
   services.fwupd.enable = true;
  };
+
+#  services.printing = {
+#   listenAddresses = [ "*:631" ];
+#   allowFrom = [ "all" ];
+#   browsing = true;
+#   defaultShared = true;
+#   openFirewall = true;
+#   browsedConf = ''
+#    BrowseDNSSDSubTypes _cups,_print
+#    BrowseLocalProtocols all
+#    BrowseRemoteProtocols all
+#    CreateIPPPrinterQueues All
+#    BrowseProtocols all
+#    '';
+# };
 }
+
 

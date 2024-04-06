@@ -2,7 +2,7 @@
   # Enable networking
 {
   networking.networkmanager.enable = true;
-  networking.enableIPv6  = false;
+  networking.enableIPv6  = true;
   networking.extraHosts =
   ''
     192.168.1.21 who  who.local
