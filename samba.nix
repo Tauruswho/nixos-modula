@@ -1,11 +1,15 @@
  { config, lib, pkgs, ... }:
 {
   # Samba Server
-services.samba-wsdd.enable = true; # make shares visible for windows 10 clients
 services.samba = {
   enable = true;
+  package = pkgs.samba4Full;
   securityType = "user";
+  openFirewall = true;
   extraConfig = ''
+    load printers = yes
+    printing = CUPS
+    printcap name = cups
     workgroup = WORKGROUP
     server string = smbnix
     netbios name = smbnix
@@ -20,7 +24,7 @@ services.samba = {
   '';
   shares = {
     public = {
-      path = "/home";
+      path = "/home/twat";
       browseable = "yes";
       "read only" = "no";
       "guest ok" = "yes";
@@ -30,7 +34,7 @@ services.samba = {
       "force group" = "groupname";
     };
     private = {
-      path = "/home/mark/Documents";
+      path = "/home";
       browseable = "yes";
       "read only" = "no";
       "guest ok" = "no";
@@ -39,6 +43,24 @@ services.samba = {
       "force user" = "username";
       "force group" = "groupname";
     };
+    printers = {
+      comment = "All Printers";
+      path = "/var/spool/samba";
+      public = "yes";
+      browseable = "yes";
+      # to allow user 'guest account' to print.
+      "guest ok" = "yes";
+      writable = "no";
+      printable = "yes";
+      "create mode" = 0700;
+    };
   };
 };
+  systemd.tmpfiles.rules = [ "d /var/spool/samba 1777 root root -" ];
+
+  # Samba for windows...
+   services.samba-wsdd = {
+    enable = true;
+    openFirewall = true;
+    };
 }

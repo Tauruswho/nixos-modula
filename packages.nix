@@ -20,7 +20,6 @@
       shotwell
       gnome.gnome-disk-utility
       vlc
-      samba4Full
       audacious
       audacious-plugins
       asunder
@@ -31,18 +30,13 @@
       neofetch
       cmatrix
       fswebcam
-      home-manager
       sane-backends
       sane-frontends
       xsane
-      hplipWithPlugin
-      gutenprint
-      gutenprintBin
       gimp-with-plugins
       usbutils
       webcamoid
       gedit
-      home-manager
       killall
       lm_sensors
       htop
@@ -66,7 +60,6 @@
       bluez-tools
       openhantek6022
       mpv
-      hplip
       eagle
       libsForQt5.kdeconnect-kde
       ghostscript
