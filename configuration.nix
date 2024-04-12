@@ -19,6 +19,7 @@
       ./sound.nix
       ./users.nix
       ./zfs.nix
+      ./steam.nix
     ];
 
      # Enable Flakes and the new command-line tool
