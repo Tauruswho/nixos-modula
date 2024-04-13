@@ -2,6 +2,8 @@
 
 {
   services.jellyfin.enable = true;
+  services.jellyfin.openfirewall = true;
+  services.jellyfin.user = "mark";
 environment.systemPackages = with pkgs; [
   jellyfin
   jellyfin-web
