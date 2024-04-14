@@ -20,6 +20,7 @@
       ./users.nix
       ./zfs.nix
       ./steam.nix
+      ./jellyfin.nix
     ];
 
      # Enable Flakes and the new command-line tool
@@ -109,7 +110,7 @@
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
   services.gvfs.enable = true;
-
+  services.logrotate.enable = true;
   services.flatpak.enable = true;
 
   # Open ports in the firewall.
