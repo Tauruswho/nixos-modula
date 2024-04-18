@@ -78,6 +78,7 @@
       fastfetch
       gnome.dconf-editor
       abcde
+      libsForQt5.k3b
     ];
 }
 
