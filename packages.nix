@@ -77,6 +77,7 @@
       enlightenment.econnman
       fastfetch
       gnome.dconf-editor
+      abcde
     ];
 }
 
