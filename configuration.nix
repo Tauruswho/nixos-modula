@@ -69,8 +69,8 @@
   services.xserver.enable = true;
 
   # Enable the Plasma and Enlightenment Desktop Environments.
-  services.xserver.displayManager.sddm.enable = true;
-  services.xserver.desktopManager.plasma5.enable = true;
+  services.displayManager.sddm.enable = true;
+  services.desktopManager.plasma6.enable = true;
   services.xserver.desktopManager.enlightenment.enable = true;
   programs.dconf.enable = true;
 
@@ -130,7 +130,7 @@
   nix.gc = {
                 automatic = true;
                 dates = "weekly";
-                options = "--delete-older-than 7d";
+                options = "--delete-older-than 14d";
         };
   boot.kernel.sysctl = { "vm.swappiness" = 10;};
 }

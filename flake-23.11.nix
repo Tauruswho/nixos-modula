@@ -2,8 +2,8 @@
   description = "Mark's NixOS Flake";
   inputs = {
 
-  # Official NixOS package source, using nixos-unstable branch here
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+  # Official NixOS package source, using nixos-23.11 branch here
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.11";
    # nix-software-center.url = "github:snowfallorg/nix-software-center";
     # home-manager, used for managing user configuration
    # home-manager = { url = "github:nix-community/home-manager/release-23.11";
