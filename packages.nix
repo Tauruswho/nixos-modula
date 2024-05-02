@@ -84,6 +84,7 @@
       hardinfo
       lshw
       hwinfo
+      nvme-cli
     ];
 }
 
