@@ -21,6 +21,7 @@
       ./zfs.nix
       ./steam.nix
       ./jellyfin.nix
+   #   ./syncoid.nix
     ];
 
      # Enable Flakes and the new command-line tool
