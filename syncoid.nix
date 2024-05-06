@@ -12,6 +12,7 @@
      options.services.syncoid.localSourceAllow.default ++ [ "mount" ];
   localTargetAllow =
      options.services.syncoid.localTargetAllow.default ++ [ "destroy" ];
+     };
   };
 }
 
