@@ -79,6 +79,12 @@
       gnome.dconf-editor
       abcde
       kdePackages.k3b
+      inxi
+      dmidecode
+      hardinfo
+      lshw
+      hwinfo
+      nvme-cli
     ];
 }
 
