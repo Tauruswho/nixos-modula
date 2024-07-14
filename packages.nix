@@ -16,9 +16,9 @@
       golden-cheetah
       audacity
       strawberry
-      gnome.simple-scan
+      simple-scan
       shotwell
-      gnome.gnome-disk-utility
+      gnome-disk-utility
       vlc
       audacious
       audacious-plugins
@@ -76,7 +76,7 @@
       obs-studio
       enlightenment.econnman
       fastfetch
-      gnome.dconf-editor
+      dconf-editor
       abcde
       kdePackages.k3b
       inxi
@@ -85,6 +85,9 @@
       lshw
       hwinfo
       nvme-cli
+      google-chrome
+      brave
+      tor
     ];
 }
 
