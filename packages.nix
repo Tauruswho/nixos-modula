@@ -70,7 +70,12 @@
       xfce.thunar-volman
       xfce.thunar-archive-plugin
       xfce.thunar-media-tags-plugin
-      kicad
+      # kicad
+          (kicad.override {
+      # NOTE: wxpython-4.2.1 is not supported for interpreter python3.12
+      python3 = pkgs.python311;
+    })
+
       teams-for-linux
       zoom-us
       obs-studio
