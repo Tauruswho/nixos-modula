@@ -45,8 +45,21 @@
 
 };
 
+  users.users.guest = {
+  homeMode = "770";
+  isNormalUser  = true;
+  uid = 1958;
+  home  = "/home/guest";
+  description  = "Guest";
+  group = "guest";
+  extraGroups  = [ "networkmanager" "scanner" "lp" "users" ];
+
+};
+
   users.groups.mark.gid = 1955;
   users.groups.mince.gid = 1956;
   users.groups.monica.gid = 1957;
+  users.groups.guest.gid = 1958;
+
 }
 
