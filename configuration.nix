@@ -38,7 +38,7 @@
    boot.kernelPackages = config.boot.zfs.package.latestCompatibleLinuxPackages;
    boot.supportedFilesystems = [ "zfs" ];
   # boot.zfs.forceImportRoot = false;
-   boot.zfs.extraPools = [ "tank2" ];
+   boot.zfs.extraPools = [ "tank2" ]; # Tank2--Backup-zfs-2
    networking.hostId = "3cc408bd";
 
   networking.hostName = "who"; # Define your hostname.
