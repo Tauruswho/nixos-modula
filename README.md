@@ -33,7 +33,9 @@ zfs create -o mountpoint=/home/mark/Pictures nixos/home/mark/Pictures
 
 zfs create -o mountpoint=/home/mark/Videos nixos/home/mark/Videos
 
-zfs create -o mountpoint=/home/mark/Downloads/isos
+zfs create -o mountpoint=/home/mark/Downloads nixos/home/mark/Downloads
+
+zfs create -o mountpoint=/home/mark/Downloads/isos nixos/home/mark/Downloads/isos
 
 zfs create -o mountpoint=/home/monica/Music nixos/home/monica/Music
 
