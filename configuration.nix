@@ -15,7 +15,7 @@
       ./nfs.nix
       ./packages.nix
       ./printing.nix
-      ./samba.nix
+    #  ./samba.nix
       ./sound.nix
       ./users.nix
       ./zfs.nix
@@ -35,7 +35,7 @@
    boot.loader.efi.canTouchEfiVariables = true;
   # boot.supportedFilesystems = [ "bcachefs" ];
   # boot.kernelPackages = pkgs.linuxPackages_latest;
-   boot.kernelPackages = config.boot.zfs.package.latestCompatibleLinuxPackages;
+  # boot.kernelPackages = config.boot.zfs.package.latestCompatibleLinuxPackages;
    boot.supportedFilesystems = [ "zfs" ];
   # boot.zfs.forceImportRoot = false;
    boot.zfs.extraPools = [ "tank2" ]; # Tank2--Backup-zfs-2
