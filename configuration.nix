@@ -15,7 +15,7 @@
       ./nfs.nix
       ./packages.nix
       ./printing.nix
-    #  ./samba.nix
+    #  ./samba.nix  # Can't get this to work....
       ./sound.nix
       ./users.nix
       ./zfs.nix
