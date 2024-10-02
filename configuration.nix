@@ -74,6 +74,8 @@
   services.desktopManager.plasma6.enable = true;
   services.xserver.desktopManager.enlightenment.enable = true;
   programs.dconf.enable = true;
+  # Cosmic Desktop from System76...
+  hardware.system76.enableAll = true;
 
   # Configure keymap in X11
   services.xserver.xkb.layout = "gb";
